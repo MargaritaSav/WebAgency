@@ -115,18 +115,20 @@
 
 	header li
 	{
-	    padding-top: 3px;
+	    padding-top: 0;
+	    margin-top: -8px;
 	}
 
 	header li:hover
 	{
-	    padding-top: 3px;
+	    padding-top: 0;
+	    
 	}
 
 	header img
 	{
-		margin-left: 0;
-		margin-top: 15px;
+		margin-left: -80px;
+		margin-top: 20px;
 	}
 
 	#banner 
