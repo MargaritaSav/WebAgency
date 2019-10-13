@@ -58,6 +58,12 @@
 		display: none;
 	}
 
+	#servicesimg
+
+	{
+		width: 100%;
+	}
+
 	#services img
 	{
 		padding-left: 0;
@@ -65,7 +71,7 @@
 
 	#servicesimg
 	{
-		margin: auto;
+		text-align: center;
 	}
 
 	#services_2
@@ -110,7 +116,6 @@
 	header li
 	{
 	    padding-top: 3px;
-	    margin-top: -10px;
 	}
 
 	header li:hover
@@ -158,9 +163,8 @@
 	}
 
 	#servicesimg
-
 	{
-		width: 100%
+		display: none;
 	}
 
 	#block_images
@@ -174,6 +178,11 @@
 	    margin-bottom: 0;
 	}
 
+	aside
+
+	{
+		margin-top: 20px;
+	}
 
 	iframe
 	{
@@ -186,7 +195,7 @@
 	    top: 25px;
 	    right: 0;
 	    margin: auto;
-	    padding-left: 0;
+	    padding-left: 10px;
 	}
 
 	#blue_layer
