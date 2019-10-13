@@ -271,11 +271,7 @@ hr
 }
 
 
-#listpoint
-{
-    display: flex;
-    flex-direction: row;
-}
+
 
 
 aside ul
@@ -289,8 +285,12 @@ aside ul
 
 aside
 {
-    flex: 1.5;
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
     margin-top: 70px;
+    flex: 1.5;
+    
 }
 
 aside h3
@@ -309,8 +309,7 @@ aside h3
     color: rgb(92 173 211);
     font-size: 1.7em;
     position: relative;
-    margin-top: 70px;
-    margin-left: 50px;
+    
     margin-right: -10px;
 }
 
