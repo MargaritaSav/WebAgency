@@ -186,7 +186,7 @@
 	    top: 25px;
 	    right: 0;
 	    margin: auto;
-	    width: 100%;
+	    padding-left: 0;
 	}
 
 	#blue_layer
