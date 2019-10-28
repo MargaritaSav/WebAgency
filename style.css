@@ -5,7 +5,7 @@ body
     margin: 0;
 }
 
-#blockpage
+#block_page
 {
 	width: 100%;
 	margin: auto;
@@ -57,7 +57,6 @@ header ul
 {
 	display: flex;
 	list-style-type: none;
-    flex-wrap: wrap;
     margin-top: 0px;
 }
 
@@ -85,11 +84,15 @@ header a:hover
     color: rgb(60 60 60);
 }
 
-#accueilnav, #projetsnav, #servicesnav, #contactnav
+#projects_nav, #services_nav, #contact_nav
 {
     height: 30px;
 }
-#contactnav
+#home_nav
+{
+    height: 1px;
+}
+#contact_nav
 {
     background-color: rgb(245 245 245);
 }
@@ -100,28 +103,38 @@ header a:hover
 #banner
 {
 	background: url("images/slider/bg1.jpg") no-repeat center;
-	background-color: rgba(0, 0, 0, 0.6); /*pour les écrans de plus de 1200px*/
+	background-size: cover;
 	margin-top: 80px;
 	width: 100%; 
 	height: 540px;
     position: relative;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.3); 
+}
+
+#banner_elements
+{
+    height: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
 }
 
 #banner_description
 {
-	width: 700px;
+	width: 600px;
 	height: 100px;
-	padding-top: 130px;
-	padding-left: 160px;
-	color: white;		
+    display: flex;
+    flex-direction: column;
+	padding-left: 150px;
+    margin-top: -175px;
+	color: white;
 }
 
-#banner_description h1
+h1
 {
 	text-transform: uppercase;
 	font-family: robotoblack, robotobold, Arial, serif;
-	font-size: 2.5em;
+	font-size: 2.4em;
 }
 
 #webagency
@@ -164,7 +177,7 @@ header a:hover
     border-radius: 0 100% 100% 0 / 0 50% 50% 0;
     background:rgba(0, 0, 0, 0.3);
     position:absolute;
-    margin-top: 240px;
+    left: 0;
 }
 
 #right
@@ -174,8 +187,8 @@ header a:hover
     border-radius: 100% 0 0 100% / 50% 0 0 50%;
     background:rgba(0, 0, 0, 0.3);
     position:absolute;
-    margin-top: 240px;
-    right: 0; 
+    right: 0;
+    
 }
 
 .fa-chevron-left
@@ -218,7 +231,7 @@ header a:hover
     position: relative;
 }
 
-#services_1 p, #block_menu p
+#services_1 p, #block_nav p
 
 {
     font-size: 1em;
@@ -226,7 +239,7 @@ header a:hover
     text-align: center;  
 }
 
-#services h2, #block_menu h2
+#services h2, #block_nav h2
 {
     text-transform: uppercase;
     font-size: 3em; 
@@ -247,7 +260,7 @@ hr
     margin-bottom: 5px;
 }
 
-#services_1 .fa-circle, #projets .fa-circle
+#services_1 .fa-circle, #projects .fa-circle
 {
     position: absolute;
     top: 115px;
@@ -257,9 +270,8 @@ hr
 #services_2
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
-
 }
 
 #services img
@@ -267,12 +279,7 @@ hr
     width: 510px;
     height: 319px;
     padding-left: 150px;
-    flex: 1.7;
 }
-
-
-
-
 
 aside ul
 {
@@ -288,9 +295,7 @@ aside
     display: flex;
     flex-direction: row;
     margin-left: 60px;
-    margin-top: 70px;
-    flex: 1.5;
-    
+    margin-top: 70px;   
 }
 
 aside h3
@@ -301,7 +306,7 @@ aside h3
     margin-bottom: -10px;
 }
 
-#icones
+#icons
 {   display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -321,7 +326,7 @@ aside h3
 }
 
 
-#icones .fa-circle
+#icons .fa-circle
 {
     font-size: 0.4em;
     position: absolute;
@@ -332,7 +337,7 @@ aside h3
 
 /*Nos projets*/
 
-#projets
+#projects
 {
     background-color: rgb(245 245 245);
     padding-bottom: 10px;
@@ -340,7 +345,7 @@ aside h3
     padding-top: 10px;
 }
 
-#block_menu
+#block_nav
 {
     display: flex;
     flex-direction: column;
@@ -348,7 +353,7 @@ aside h3
     position: relative;
 }
 
-#block_menu nav
+#block_nav nav
 {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -422,7 +427,6 @@ button:focus #f2, button:focus #f3, button:focus #f4
 {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin-bottom: 10px;
 }
 
@@ -433,7 +437,7 @@ button:focus #f2, button:focus #f3, button:focus #f4
     margin-left: 10px;
 }
 
-.projets_desription
+.projects_desription
 {
     bottom: 0;
     position: absolute;
@@ -445,7 +449,7 @@ button:focus #f2, button:focus #f3, button:focus #f4
     display: none;
 }
 
-.projets_desription p
+.projects_desription p
 {
     margin-top: -13px;
     font-size: 0.9em;
@@ -453,7 +457,7 @@ button:focus #f2, button:focus #f3, button:focus #f4
     color: white;
 }
 
-.imagehover:hover .projets_desription
+.image_hover:hover .projects_desription
 {
     display: block;
 }
@@ -529,7 +533,7 @@ form p
     margin-bottom: 20px;
 }
 
-.ligne
+.field
 {
     width: 320px;
     margin-bottom: 15px;
